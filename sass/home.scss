@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.4s;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body {
+  font-family: "Sen", sans-serif;
+}
+header {
+  background-color: var(--Black, #232536);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10px;
+}
+nav {
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    .nav-item {
+      color: var(--Light, #fff);
+
+      /* Body 1 */
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+      &:hover {
+        color: #afafaf;
+      }
+    }
+    .button {
+      color: var(--Black, #232536);
+      font-family: Sen;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 133.333% */
+      display: inline-flex;
+      padding: 16px 48px;
+      align-items: flex-start;
+      gap: 12px;
+      margin-left: 8px;
+      &:hover {
+        background-color: #a2a2a2;
+        color: ghostwhite;
+      }
+    }
+  }
+}
+#dark-light {
+  background: transparent;
+  border: none;
+}
+.dark {
+  background-color: black;
+}
+
+.dark * {
+  color: rgb(69, 59, 59) !important;
+}
+.dark * {
+  input {
+    background-color: #070708;
+  }
+  .nav-items {
+    .button {
+      background-color: black;
+    }
+  }
+}
+footer {
+  background-color: #232536;
+  margin-top: 158px;
+}
+.par4 {
+  color: var(--Light, #fff);
+
+  /* Body 1 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.par5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+.foot {
+  padding: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-shrink {
+  padding: 20px 0;
+}
+#backtop {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+  color: #333;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+
+  right: 20px;
+  bottom: 30px;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.6s;
+}
+main {
+  padding-top: 112px;
+  .hero {
+    background: url(../images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png);
+    width: 1440px;
+    height: 720px;
+    flex-shrink: 0;
+    object-fit: fill;
+  }
+  .par1 {
+    padding-top: 128px;
+    padding-left: 81px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+
+    .p1 {
+      color: var(--Light, #fff);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 125% */
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .p2 {
+      color: var(--Light, #fff);
+      width: 803px;
+
+      /* Display */
+      font-family: Sen;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px; /* 114.286% */
+      letter-spacing: -2px;
+    }
+    .p3 {
+      color: var(--Light, #fff);
+
+      /* Body 1 */
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+      p {
+        color: var(--Yellow, #ffd050);
+
+        /* Body 1 */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+      }
+    }
+  }
+  .p4 {
+    color: var(--Light, #fff);
+    width: 599px;
+    /* Body 1 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+  }
+  button {
+    color: var(--Black, #232536);
+    font-family: Sen;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    background: var(--Yellow, #ffd050);
+    display: inline-flex;
+    padding: 16px 48px;
+    align-items: flex-start;
+    gap: 12px;
+    border: none;
+    width: 204px;
+    &:hover {
+      background-color: #f9c129;
+      color: #4c4c4c;
+    }
+  }
+}
+.par2 {
+  padding-top: 94px;
+  padding-left: 91px;
+  .par3 {
+    color: #000;
+
+    /* Heading H2 */
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+  }
+}
+.card {
+  padding-top: 64px;
+
+  &:hover {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+.par6 {
+  padding-top: 32px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+
+  .par5 {
+    color: var(--Dark-Grey, #4c4c4c);
+
+    /* Label 01 */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+  }
+  .p6 {
+    color: var(--Black, #232536);
+    width: 405px;
+    /* Heading H3 */
+    font-family: Sen;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 142.857% */
+    letter-spacing: -1px;
+  }
+  .p7 {
+    color: var(--Black, #232536);
+    width: 405px;
+    /* Body 1 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+  }
+}
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 40px;
+}
+.par7 {
+  padding-top: 100px;
+  padding-left: 80px;
+  .par8 {
+    color: var(--Black, #232536);
+    text-align: center;
+    /* Heading H2 */
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+  }
+  .cards2 {
+    padding-top: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    .card2 {
+      padding: 31px 32px;
+      border: 1px solid var(--Medium-grey, #e5dede);
+      width: 296px;
+      height: 221.072px;
+      &:hover {
+        background-color: #ffd050;
+      }
+      .img1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 46.541px;
+        flex-shrink: 0;
+        background-color: #fff;
+        border-radius: 12px;
+      }
+      .par9 {
+        color: var(--Black, #232536);
+
+        /* Heading H3 */
+        font-family: Sen;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 142.857% */
+        letter-spacing: -1px;
+      }
+      .par10 {
+        color: var(--Medium-grey, #6d6e76);
+        width: 232px;
+        height: 54.298px;
+        flex-shrink: 0;
+        /* Body 1 */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+      }
+    }
+  }
+}
+#backtop {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.2);
+  color: #333;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+
+  right: 20px;
+  bottom: 30px;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.6s;
+}
