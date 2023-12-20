@@ -186,7 +186,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    #sea {
+    #elastic {
       outline: none;
       display: flex;
       width: 1280px;
@@ -247,4 +247,7 @@ main {
   justify-content: center;
   align-items: center;
   padding-top: 30px;
+}
+.all p.hide {
+  display: none;
 }

@@ -1,3 +1,5 @@
+import "json-server";
+
 window.addEventListener("scroll", function () {
   shrink();
 });
@@ -33,3 +35,61 @@ function toggleBacktop() {
     backtop.style.bottom = "-50px";
   }
 }
+
+let firstNamename = document.querySelector("#firsname");
+let lastName = document.querySelector("#lastname");
+let userName = document.querySelector("#username");
+let password = document.querySelector("#password");
+let confirmThePassword = document.querySelector("#confirmthepassword");
+let registrate = document.querySelector("#registrate");
+
+let users = {};
+
+function Users(firstName, lastName, userName, password, confirmThepassword) {
+  this.firstName = firstName;
+  this.laststName = lastName;
+  this.userName = userName;
+  this.password = password;
+  this.confirmThePassword = confirmThepassword;
+}
+
+function creaId(users) {
+  return Object.keys(users).length;
+}
+
+registrate.addEventListener("click", () => {
+  const firstNameUser = firstName.value;
+  const lastNameUser = lastName.value;
+  const userNameUser = userName.value;
+  const passwordUser = password.value;
+  const confirmThePasswordUser = confirmThePassword.value;
+
+  const user = new user(
+    firstNameUser,
+    lastNameUser,
+    userNameUser,
+    passwordUser,
+    confirmThePasswordUser
+  );
+
+  const userId = "User" + creaId(users);
+
+  users[userId] = user;
+
+  console.log(users);
+
+  alert(`${firstNameUser} you registrated`);
+});
+document.querySelector("#elestic").oninput = function () {
+  let val = this.value.trim();
+  let elasticItems = document.querySelectorAll(".cardss .card ");
+  if (val != "") {
+    elasticItems.forEach(function (elem) {
+      if (elem.innerText.search(val) == -1) {
+        elem.classList.add("hide");
+      } else {
+        elem.classList.remove("hide");
+      }
+    });
+  }
+};
